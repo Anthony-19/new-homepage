@@ -1,0 +1,399 @@
+@font-face {
+    font-family: 'bold' ;
+    src: url(../assets/fonts/static/Inter-Bold.ttf) format(truetype);
+}
+@font-face {
+    font-family: 'extraBold' ;
+    src: url(../assets/fonts/static/Inter-ExtraBold.ttf) format(truetype);
+}
+@font-face {
+    font-family: 'regular' ;
+    src: url(../assets/fonts/static/Inter-Regular.ttf) format(truetype);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 18px;
+}
+body {
+    min-height: 100vh;
+    background-color: white;
+    font-family: 'regular';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+.menu li {
+    list-style: none;
+    font-family: 'regular';
+    font-size: 15px;
+    color: hsl(236, 13%, 42%);
+    cursor: pointer;
+}
+.menu li:active,
+.menu li:hover {
+    color: hsl(5, 85%, 63%);
+}
+.menu ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+} 
+.container-img img {
+    width: 100%;
+    max-width: 42rem;
+    height: 15rem;
+}
+main {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.container-text {
+    display: flex;
+    align-items: start;
+}
+.header-text h2 {
+    font-family: 'extraBold';
+    font-size: 3.3rem;
+    padding: 1.5rem 2rem 0 0;
+    width: 100%;
+    max-width: 45rem;
+}
+.body-text p {
+    font-family: 'regular';
+    width: 100%;
+    max-width: 40rem;
+    font-size: 14px;
+    line-height: 1.5rem;
+    padding: 2rem 0 1rem 0;
+    text-align: start;
+    color: hsl(236, 13%, 42%);
+}
+.button {
+    background-color: hsl(5, 85%, 63%);
+    color: white;
+    letter-spacing: 0.2rem;
+    font-family: 'regular';
+    font-size: 15px;
+    padding: 0.5rem 1.5rem;
+    border: none;
+}
+.button:hover,
+.button:active {
+    background-color: hsl(240, 100%, 5%);
+}
+
+.container-right {
+    background-color: hsl(240, 100%, 5%);
+    color: white;
+    padding: 1.8rem;
+}
+.container-right h3 {
+    color: hsl(35, 77%, 62%);
+    font-family: bold;
+    padding-bottom: 1rem;
+}
+.container-right h4 {
+    font-family: bold;
+    font-size: 1rem;
+}
+.container-right h4:active,
+.container-right h4:hover {
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
+}
+.container-right p {
+    font-size: 0.9rem;
+    color: hsl(236, 13%, 42%);
+}
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.card1,
+.card2,
+.card3 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: start;
+}
+.card1 img,
+.card2 img,
+.card3 img {
+    width: 100%;
+    height: 100%;
+    max-width: 5rem;
+    max-height: 10rem;
+}
+section h2 {
+    font-family: 'bold';
+    color: hsl(236, 13%, 42%);
+    padding-top: 1rem;
+}
+section h4 {
+    font-family: bold;
+    font-size: 0.7rem;
+}
+section h4:active,
+section h4:hover {
+    color:  hsl(5, 85%, 63%);
+    cursor: pointer;
+}
+section p {
+    font-family: 'regular';
+    font-size: 0.7rem;
+}
+nav {
+    display: none;
+    cursor: pointer;
+}
+.hamburger-menu {
+    display: none;
+}
+@media screen and (max-width: 930px) and (min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        justify-content: center;
+        align-items: start;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+    .header-text h2 {
+        font-family: 'extraBold';
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .body-text p {
+        font-family: 'regular';
+        width: 100%;
+        max-width: 40rem;
+        font-size: 10px;
+        line-height: 1rem;
+        padding: 2rem 0 0.1rem 0;
+        text-align: start;
+        color: hsl(236, 13%, 42%);
+    }
+    .button {
+        background-color: hsl(5, 85%, 63%);
+        color: white;
+        /* letter-spacing: 0.1rem; */
+        font-family: 'regular';
+        font-size: 10px;
+        padding: 0.5rem 1rem;
+        border: none;
+    }
+    .container-right {
+        background-color: hsl(240, 100%, 5%);
+        color: white;
+        padding: 1.5rem;
+    }
+    .container-right h3 {
+        color: hsl(35, 77%, 62%);
+        font-family: bold;
+        padding-bottom: 1rem;
+    }
+    .container-right h4 {
+        font-family: bold;
+        font-size: 0.8rem;
+    }
+    .container-right h4:active,
+    .container-right h4:hover {
+        color: hsl(35, 77%, 62%);
+        cursor: pointer;
+    }
+    .container-right p {
+        font-size: 0.9rem;
+        color: hsl(236, 13%, 42%);
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    .card1,
+    .card2,
+    .card3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.2rem;
+        text-align: start;
+        margin-bottom: 0.2rem;
+    }
+    .card1 img,
+    .card2 img,
+    .card3 img {
+        width: 100%;
+        height: 100%;
+        max-width: 10rem;
+        max-height: 10rem;
+    }
+    section h2 {
+        font-family: 'bold';
+        color: hsl(236, 13%, 42%);
+        font-size: 3rem;
+    }
+    section h4 {
+        font-family: bold;
+        font-size: 1.5rem;
+    }
+    section p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .menu {
+        display: none;
+    }  
+    .main.container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .container-text {
+        display: flex;
+        flex-direction: column;
+    }
+    .header-text h2{
+        font-family: 'extraBold';
+        font-size: 2rem;
+        padding: 1.5rem 1rem 0 0;
+    
+    }
+    .body-text p {
+        font-family: 'regular';
+        width: 100%;
+        max-width: 40rem;
+        font-size: 13px;
+        line-height: 1rem;
+        padding: 0rem 0 0.1rem 0;
+        text-align: start;
+        color: hsl(236, 13%, 42%);
+    }
+    .section {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .card2,
+    .card3 {
+        margin-top: -2rem;
+    }
+}
+
+
+/* just use this as guide */
+@media screen and (max-width: 768px) {
+    .header .logo img{
+        position: relative;
+        z-index: 9999;
+    }
+    .hamburger-menu {
+        padding: 0.9rem 0.6rem;
+        border: none;
+        background: none;
+        z-index: 999;
+        display: block;
+        padding: 0.9rem 0.6rem;
+    }
+    .hamburger {
+        display: block;
+        position: relative;
+        /* we use position relative cos we will be applying pseudo element and applying absolute makes them stick together  */
+        transition: ease 3s;
+    }
+    .hamburger, .hamburger::before, .hamburger::after {
+        content: '';
+        /* the content is only for the before and after pseudo just to make them show up*/
+        width: 35px;
+        height: 3px;
+        background-color: black;
+    }
+    .hamburger::before, .hamburger::after {
+        position: absolute;
+        left: 0;
+        /* since the lines are overlapping eachother we give them a left of 0 */
+    }
+    .hamburger::after {
+        top: 6px;
+    }
+    .hamburger::before {
+        bottom: 6px;
+    }
+
+    .is-active .hamburger{
+        transform: rotate(45deg);
+        position: fixed;
+        right: 20px;
+
+    }
+    .is-active .hamburger::after {
+        transform: rotate(90deg) translate(-6px);
+    }
+    .is-active .hamburger::before {
+        opacity: 0;
+    }
+    .is-active .hamburger{
+        transform: rotate(45deg);
+    }
+    .is-active .hamburger::after  {
+        transform: rotate(90deg) translate(-6px);
+    }
+   .is-active .hamburger::before {
+        opacity: 0;
+    }
+    .menu {
+        display: block;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        /* used to cover the entire height or width of its container, bottom, top, right */
+        width: 75vw;
+        color: white;
+        z-index: 999;
+        padding: 1.25rem;
+        transition:  4s;
+        transform: translateX(100%);
+    }
+    .menu ul {
+        position: absolute;
+        top: 45%;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+    }
+    .menu ul li {
+        padding: 0rem 0;
+        color: black;
+        font-family: 'bold';
+        font-size: 1rem;
+    }
+    .active {
+        transform: translateX(0%);
+    }
+
+}
